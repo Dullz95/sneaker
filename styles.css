@@ -15,12 +15,13 @@ body {
   width: 100%;
   height: 100%;
   margin-left: 60px;
+  padding: 10%;
 }
 .section {
   display: flex;
   min-height: 100vh;
   align-items: center;
-  padding-left: 10%;
+  /* padding-left: 10%; */
 }
 .home-details {
   color: #222;
@@ -40,9 +41,10 @@ body {
 
 .home-details p {
   font-size: 20px;
-  padding: 10px 10px;
+  padding-right: 15%;
   margin-bottom: 20px;
   color: #222;
+  padding-bottom: 7%;
 }
 
 .home-details a {
@@ -53,10 +55,89 @@ body {
 }
 
 .btn {
+  text-decoration: none;
+  color: #222;
+  border-radius: 30px;
+  padding: 10px 40px;
+  transition-duration: 0.5s;
+  margin-top: 20px;
+  border: 2px solid black;
 }
-
+.home-details a:hover {
+  background-color: red;
+  border: 2px solid red;
+  color: white;
+}
+.page-heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+  padding-right: 10%;
+}
+.page-subtitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #ed2d34;
+  margin-top: 10px;
+}
+.page-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* padding-top: 10%;
+  padding-right: 10%; */
+}
+.side-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  padding-top: 10px;
+}
+.stats {
+  gap: 100px;
+  font-size: 15px;
+}
+.stats span {
+  font-size: 60px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+.product img {
+  height: 300px !important;
+  width: 300px !important;
+  object-fit: contain;
+}
 .red-text {
   color: red;
+}
+.testimonial img {
+  height: 100px;
+  width: 100px !important;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial-name {
+  font-weight: normal;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #222;
+  margin-top: 10%;
+}
+#testimonialPage {
+  display: grid;
+  align-content: center;
+}
+.testimonial-message {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 /* Navigation Tooltip Styling */
 #fp-nav ul li .fp-tooltip {
@@ -95,8 +176,8 @@ body {
 }
 
 /* Product slider active item setting */
-#product-slider .active h3,
-#product-slider .active button {
+#product-slider .active + .owl-item h3,
+#product-slider .active + .owl-item button {
   display: block;
 }
 

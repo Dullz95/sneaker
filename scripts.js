@@ -16,11 +16,11 @@ $(document).ready(function () {
   //   Initialize product slider and set options
   $("#product-slider").owlCarousel({
     items: 1,
-    margin: 0,
-    stagePadding: 200,
+    margin: 20,
+    stagePadding: 400,
     loop: true,
     dots: false,
-    //   autoplay: true,
+    // autoplay: true,
     center: true,
   });
 });
